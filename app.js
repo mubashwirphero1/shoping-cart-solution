@@ -11,6 +11,10 @@ function updateCaseQuantity(product, price, isIncrease) {
 
     const productTotal = document.getElementById(product + '-total');
     productTotal.innerText = productNumber * price;
+
+
+
+    calculateTotal();
 }
 
 function getInputId(product) {
@@ -31,5 +35,3 @@ function calculateTotal() {
     document.getElementById('tax').innerText = tax;
     document.getElementById('total').innerText = totalAmount;
 }
-
-calculateTotal();
